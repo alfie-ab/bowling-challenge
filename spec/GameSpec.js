@@ -9,7 +9,7 @@ describe('Game', function() { 'use strict';
   });
 
   it("the player should start the game with an empty frame", function(){
-    expect(game._frames).not.toContain(["frame"]);
+    expect(game._frames).toEqual([]);
   });
 
   it("the player should be able to add a frame", function(){
